@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d6d8afd-ba6a-4b6b-8521-55dd4cb2c11a" name="Changes" comment="инициализация БД по средствам flyway, подключен hibernate">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/EventRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/FileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/GenericRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/HibernateContext.java" afterDir="false" />
+    <list default="true" id="3d6d8afd-ba6a-4b6b-8521-55dd4cb2c11a" name="Changes" comment="Репозитории для работы с БД">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/service/EventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/RunApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/RunApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/model/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/model/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_1_0__init_migration.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1_1_0__init_migration.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +68,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679125626946</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Работа с БД по средствам hibernate, аннотации для сущностей">
+      <created>1679128811705</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679128811705</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Репозитории для работы с БД">
+      <created>1679132112481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679132112481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +99,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init, структура MVC, сделанны POJO в model" />
     <MESSAGE value="инициализация БД по средствам flyway, подключен hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="инициализация БД по средствам flyway, подключен hibernate" />
+    <MESSAGE value="Работа с БД по средствам hibernate, аннотации для сущностей" />
+    <MESSAGE value="Репозитории для работы с БД" />
+    <option name="LAST_COMMIT_MESSAGE" value="Репозитории для работы с БД" />
   </component>
 </project>

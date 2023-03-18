@@ -5,6 +5,7 @@ import org.rest.repository.FileRepository;
 import org.rest.repository.hibernate.FileRepositoryImpl;
 import org.rest.service.FileService;
 
+import java.util.List;
 import java.util.Set;
 
 public class FileServiceImpl implements FileService {
@@ -15,7 +16,7 @@ public class FileServiceImpl implements FileService {
     }
 
     @Override
-    public Set<File> getAll() {
+    public List<File> getAll() {
         return fileRepository.getAll();
     }
 

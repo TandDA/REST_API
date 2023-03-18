@@ -8,6 +8,7 @@ import org.rest.model.Event;
 import org.rest.model.File;
 import org.rest.repository.FileRepository;
 
+import java.util.List;
 import java.util.Set;
 
 public class FileRepositoryImpl implements FileRepository {
@@ -23,10 +24,10 @@ public class FileRepositoryImpl implements FileRepository {
     }
 
     @Override
-    public Set<File> getAll() {
+    public List<File> getAll() {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        Set<File> result = (Set<File>) session.createQuery("FROM File").list();
+        List<File> result = session.createQuery("FROM File").list();
         transaction.commit();
         session.close();
         return result;

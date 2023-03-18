@@ -4,6 +4,7 @@ import org.rest.model.Event;
 import org.rest.repository.hibernate.EventRepositoryImpl;
 import org.rest.service.EventService;
 
+import java.util.List;
 import java.util.Set;
 
 public class EventServiceImpl implements EventService {
@@ -14,7 +15,7 @@ public class EventServiceImpl implements EventService {
     }
 
     @Override
-    public Set<Event> getAll() {
+    public List<Event> getAll() {
         return eventRepository.getAll();
     }
 

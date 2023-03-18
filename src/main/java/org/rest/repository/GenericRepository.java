@@ -6,7 +6,7 @@ import java.util.Set;
 public interface GenericRepository<T, ID> {
     T getById(ID id);
 
-    Set<T> getAll();
+    List<T> getAll();
 
     T save(T t);
 

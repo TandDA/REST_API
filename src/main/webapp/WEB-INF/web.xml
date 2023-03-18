@@ -6,12 +6,33 @@
     <display-name>Servlets Tutorial</display-name>
 
     <servlet>
-        <servlet-name>SimpleServlet</servlet-name>
+        <servlet-name>UserServlet</servlet-name>
         <servlet-class>org.rest.controller.UserController</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>FileServlet</servlet-name>
+        <servlet-class>org.rest.controller.FileController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>EventServlet</servlet-name>
+        <servlet-class>org.rest.controller.EventController</servlet-class>
+    </servlet>
+
+
     <servlet-mapping>
-        <servlet-name>SimpleServlet</servlet-name>
-        <url-pattern>/SimpleServlet</url-pattern>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/api/users</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>FileServlet</servlet-name>
+        <url-pattern>/api/files</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>EventServlet</servlet-name>
+        <url-pattern>/api/events</url-pattern>
     </servlet-mapping>
 </web-app>

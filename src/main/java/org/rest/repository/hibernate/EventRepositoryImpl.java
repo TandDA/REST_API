@@ -23,10 +23,10 @@ public class EventRepositoryImpl implements EventRepository {
     }
 
     @Override
-    public Set<Event> getAll() {
+    public List<Event> getAll() {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        Set<Event> result = (Set<Event>) session.createQuery("FROM Event").list();
+        List<Event> result = session.createQuery("FROM Event").list();
         transaction.commit();
         session.close();
         return result;

@@ -8,7 +8,7 @@ import org.rest.model.File;
 import org.rest.model.User;
 import org.rest.repository.UserRepository;
 
-import java.util.Set;
+import java.util.List;
 
 public class UserRepositoryImpl implements UserRepository {
     SessionFactory sessionFactory = HibernateContext.getSession();
@@ -23,10 +23,10 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public Set<User> getAll() {
+    public List<User> getAll() {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        Set<User> result = (Set<User>) session.createQuery("FROM User").list();
+        List<User> result = session.createQuery("FROM User").list();
         transaction.commit();
         session.close();
         return result;

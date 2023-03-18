@@ -4,6 +4,7 @@ import org.rest.model.User;
 import org.rest.repository.hibernate.UserRepositoryImpl;
 import org.rest.service.UserService;
 
+import java.util.List;
 import java.util.Set;
 
 public class UserServiceImpl implements UserService {
@@ -14,7 +15,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Set<User> getAll() {
+    public List<User> getAll() {
         return userRepository.getAll();
     }
 

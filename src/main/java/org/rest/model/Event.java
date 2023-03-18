@@ -1,8 +1,19 @@
 package org.rest.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "Event")
 public class Event {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "userId")
     private User user;
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "fileId")
     private File file;
 
 

@@ -1,13 +1,24 @@
 package org.rest.model;
 
+import jakarta.persistence.*;
+
 import java.util.List;
+import java.util.Set;
 
+@Entity
+@Table(name = "User")
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
+    @Column(name = "name")
     private String name;
-    private List<Event> events;
+    @OneToMany(cascade=CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name="userId")
+    private Set<Event> events;
 
-    public User(Integer id, String name, List<Event> events) {
+    public User(Integer id, String name, Set<Event> events) {
         this.id = id;
         this.name = name;
         this.events = events;
@@ -32,11 +43,11 @@ public class User {
         this.name = name;
     }
 
-    public List<Event> getEvents() {
+    public Set<Event> getEvents() {
         return events;
     }
 
-    public void setEvents(List<Event> events) {
+    public void setEvents(Set<Event> events) {
         this.events = events;
     }
 }

@@ -1,8 +1,17 @@
 package org.rest.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "File")
 public class File {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "filePath")
     private String filePath;
     public File(Integer id, String name, String filePath){
         this.id = id;

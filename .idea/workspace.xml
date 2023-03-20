@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d6d8afd-ba6a-4b6b-8521-55dd4cb2c11a" name="Changes" comment="tomcat,servlets,service,servlet example">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3d6d8afd-ba6a-4b6b-8521-55dd4cb2c11a" name="Changes" comment="Загрузка файлов">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/model/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/model/FileModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/repository/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/FileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/EventRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/EventRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/FileRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/FileRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/HibernateContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/HibernateContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/UserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/service/impl/FileServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679132112481</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Загрузка файлов">
+      <created>1679316309877</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679316309877</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +101,7 @@
     <MESSAGE value="инициализация БД по средствам flyway, подключен hibernate" />
     <MESSAGE value="Работа с БД по средствам hibernate, аннотации для сущностей" />
     <MESSAGE value="Репозитории для работы с БД" />
-    <option name="LAST_COMMIT_MESSAGE" value="Репозитории для работы с БД" />
+    <MESSAGE value="Загрузка файлов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Загрузка файлов" />
   </component>
 </project>

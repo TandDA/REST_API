@@ -66,6 +66,7 @@ public class FileController extends HttpServlet {
                 if (!fileItem.isFormField()) {
 
                     String fileName = fileItem.getName();
+                    fileService.save(new FileModel(null,fileName,filePath));
                     if (fileName.lastIndexOf("\\") >= 0) {
                         file = new File(filePath +
                                 fileName.substring(fileName.lastIndexOf("\\")));

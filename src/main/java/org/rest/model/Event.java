@@ -14,13 +14,13 @@ public class Event {
     private User user;
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "fileId")
-    private File file;
+    private FileModel fileModel;
 
 
-    public Event(Integer id, User user, File file) {
+    public Event(Integer id, User user, FileModel fileModel) {
         this.id = id;
         this.user = user;
-        this.file = file;
+        this.fileModel = fileModel;
     }
 
     public Event(){
@@ -43,11 +43,11 @@ public class Event {
         this.user = user;
     }
 
-    public File getFile() {
-        return file;
+    public FileModel getFile() {
+        return fileModel;
     }
 
-    public void setFile(File file) {
-        this.file = file;
+    public void setFile(FileModel fileModel) {
+        this.fileModel = fileModel;
     }
 }

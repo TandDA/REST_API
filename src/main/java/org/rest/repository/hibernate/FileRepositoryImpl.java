@@ -4,68 +4,66 @@ package org.rest.repository.hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.rest.model.Event;
-import org.rest.model.File;
+import org.rest.model.FileModel;
 import org.rest.repository.FileRepository;
 
 import java.util.List;
-import java.util.Set;
 
 public class FileRepositoryImpl implements FileRepository {
     SessionFactory sessionFactory = HibernateContext.getSession();
     @Override
-    public File getById(Integer id) {
+    public FileModel getById(Integer id) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        File result = session.get(File.class,id);
+        FileModel result = session.get(FileModel.class,id);
         transaction.commit();
         session.close();
         return result;
     }
 
     @Override
-    public List<File> getAll() {
+    public List<FileModel> getAll() {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        List<File> result = session.createQuery("FROM File").list();
+        List<FileModel> result = session.createQuery("FROM FileModel").list();
         transaction.commit();
         session.close();
         return result;
     }
 
     @Override
-    public File save(File file) {
+    public FileModel save(FileModel fileModel) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.save(file);
+        session.save(fileModel);
         transaction.commit();
         session.close();
-        return file;
+        return fileModel;
     }
 
     @Override
-    public File update(File newFile) {
-        File fileToUpdate = null;
+    public FileModel update(FileModel newFileModel) {
+        FileModel fileModelToUpdate = null;
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        fileToUpdate = session.get(File.class, newFile.getId());
-        fileToUpdate.setFilePath(newFile.getFilePath());
-        fileToUpdate.setName(newFile.getName());
-        session.update(fileToUpdate);
+        fileModelToUpdate = session.get(FileModel.class, newFileModel.getId());
+        fileModelToUpdate.setFilePath(newFileModel.getFilePath());
+        fileModelToUpdate.setName(newFileModel.getName());
+        session.update(fileModelToUpdate);
         transaction.commit();
 
         session.close();
 
-        return fileToUpdate;
+        return fileModelToUpdate;
     }
 
     @Override
     public void deleteById(Integer id) {
-        File fileToDelete = null;
+        FileModel fileModelToDelete = null;
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        fileToDelete = session.get(File.class, id);
-        session.delete(fileToDelete);
+        fileModelToDelete = session.get(FileModel.class, id);
+        session.delete(fileModelToDelete);
         transaction.commit();
         session.close();
     }

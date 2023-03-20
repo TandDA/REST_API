@@ -4,11 +4,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.rest.model.Event;
-import org.rest.model.File;
 import org.rest.repository.EventRepository;
 
 import java.util.List;
-import java.util.Set;
 
 public class EventRepositoryImpl implements EventRepository {
     SessionFactory sessionFactory = HibernateContext.getSession();

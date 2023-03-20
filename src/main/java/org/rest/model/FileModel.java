@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "File")
-public class File {
+public class FileModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -13,13 +13,13 @@ public class File {
     private String name;
     @Column(name = "filePath")
     private String filePath;
-    public File(Integer id, String name, String filePath){
+    public FileModel(Integer id, String name, String filePath){
         this.id = id;
         this.name = name;
 
         this.filePath = filePath;
     }
-    public File(){
+    public FileModel(){
 
     }
 

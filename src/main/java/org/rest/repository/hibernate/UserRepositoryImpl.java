@@ -3,8 +3,6 @@ package org.rest.repository.hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.rest.model.Event;
-import org.rest.model.File;
 import org.rest.model.User;
 import org.rest.repository.UserRepository;
 

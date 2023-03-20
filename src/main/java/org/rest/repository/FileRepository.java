@@ -1,6 +1,6 @@
 package org.rest.repository;
 
-import org.rest.model.File;
+import org.rest.model.FileModel;
 
-public interface FileRepository extends GenericRepository<File, Integer> {
+public interface FileRepository extends GenericRepository<FileModel, Integer> {
 }

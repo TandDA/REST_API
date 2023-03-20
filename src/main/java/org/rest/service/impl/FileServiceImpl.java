@@ -1,33 +1,31 @@
 package org.rest.service.impl;
 
-import org.rest.model.File;
-import org.rest.repository.FileRepository;
+import org.rest.model.FileModel;
 import org.rest.repository.hibernate.FileRepositoryImpl;
 import org.rest.service.FileService;
 
 import java.util.List;
-import java.util.Set;
 
 public class FileServiceImpl implements FileService {
     FileRepositoryImpl fileRepository = new FileRepositoryImpl();
     @Override
-    public File getById(Integer integer) {
+    public FileModel getById(Integer integer) {
         return fileRepository.getById(integer);
     }
 
     @Override
-    public List<File> getAll() {
+    public List<FileModel> getAll() {
         return fileRepository.getAll();
     }
 
     @Override
-    public File save(File file) {
-        return fileRepository.save(file);
+    public FileModel save(FileModel fileModel) {
+        return fileRepository.save(fileModel);
     }
 
     @Override
-    public File update(File file) {
-        return fileRepository.update(file);
+    public FileModel update(FileModel fileModel) {
+        return fileRepository.update(fileModel);
     }
 
     @Override

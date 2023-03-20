@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d6d8afd-ba6a-4b6b-8521-55dd4cb2c11a" name="Changes" comment="Репозитории для работы с БД">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/controller/EventController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/rest/controller/FileController.java" afterDir="false" />
+    <list default="true" id="3d6d8afd-ba6a-4b6b-8521-55dd4cb2c11a" name="Changes" comment="tomcat,servlets,service,servlet example">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/RunApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/RunApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/repository/GenericRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/GenericRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/model/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/model/FileModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/repository/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/FileRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/EventRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/EventRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/FileRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/FileRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/HibernateContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/HibernateContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/repository/hibernate/UserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/service/impl/EventServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/service/impl/EventServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/service/FileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rest/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rest/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
